@@ -6,7 +6,7 @@ import styles from './main.module.css'
 import Button from "@material-ui/core/Button";
 import {ThemeProvider} from "@material-ui/styles";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
-import BasicTimeline, {WorkExp} from "../about me/work experiences/workExp";
+import {WorkExp} from "../about me/work experiences/workExp";
 import {Skills} from "../about me/skills/skils";
 import {Languages} from "../about me/languages/languages";
 import {Education} from "../about me/education/education";
