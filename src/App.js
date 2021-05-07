@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Container from '@material-ui/core/Container';
+import Box from "@material-ui/core/Box";
+import {Header} from "./components/header/header";
+import {Main} from "./components/main/main";
+import {Footer} from "./components/footer/footer";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <CssBaseline />
+            <Container maxWidth='xl'>
+                <main>
+                    <Box ml={12} mr={12} tyle={{ backgroundColor: '#F9FAFF'}}>
+                        <Header/>
+                        <Main/>
+                        {/*<Footer/>*/}
+                    </Box>
+                </main>
+            </Container>
+
+        </>
+    );
 }
 
 export default App;
