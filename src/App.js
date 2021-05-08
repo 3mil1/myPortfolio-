@@ -10,7 +10,7 @@ import {Main} from "./components/main/main";
 
 function App() {
     return (
-        <>
+        <div className={"MainContainer"}>
             <CssBaseline />
             <Container maxWidth='xl'>
                 <main>
@@ -21,8 +21,7 @@ function App() {
                     </Box>
                 </main>
             </Container>
-
-        </>
+        </div>
     );
 }
 
