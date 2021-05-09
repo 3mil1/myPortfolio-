@@ -1,13 +1,26 @@
+html {
+    --body-padding: 121px;
+}
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: -100px;
-    width: 100%;
-
-    color: white;
-    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 13rem;
+    height: 8rem;
+    margin-left: calc(var(--body-padding) * -1);
+    width: calc(100% + calc(var(--body-padding) * 2));
 }
 
-.wave {
+.footer_wave {
     width: 100%;
+    flex-shrink: 0;
+    overflow: visible;
 }
+
+.footer_copyWrite {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 0.875rem;;
+    color: #88869B;
+}
+

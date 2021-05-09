@@ -1,35 +1,39 @@
 .image {
     position: absolute;
-    right: 122px;
-    top: 118px;
+    width: 274px;
+    right: 149px;
+    top: 52px;
 }
 
 .frontEnd {
     font-family: Nunito, serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 27px;
     text-transform: uppercase;
     color: #FDC435;
+    margin-bottom: 1rem;
 }
 
 .myName {
     font-family: Playfair Display, serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 2.25rem;
     line-height: 120%;
     color: #25282B;
+    margin-bottom: 1.5rem;
 }
 
 .about {
     font-family: Nunito, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.25rem;
     line-height: 150%;
     color: #828282;
+    margin-bottom: 2.5rem;
 }
 
 

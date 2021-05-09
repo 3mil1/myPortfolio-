@@ -3,38 +3,51 @@ import {BarChart, Bar, CartesianGrid, XAxis, YAxis, Legend, Tooltip} from "recha
 
 const data = [
     {
-        "name": "Page A",
-        "uv": 4000,
+        "name": "React",
+        "Javascript": 65,
     },
     {
-        "name": "Page B",
-        "uv": 3000,
+        "name": "Javascript",
+        "Javascript": 65,
     },
     {
-        "name": "Page C",
-        "uv": 2000,
+        "name": "Redux",
+        "Javascript": 60,
     },
     {
-        "name": "Page D",
-        "uv": 2780,
+        "name": "Typescript",
+        "Javascript": 35,
     },
     {
-        "name": "Page E",
-        "uv": 1890,
+        "name": "HTML5/CSS3",
+        "HTML5/CSS3": 75,
     },
     {
-        "name": "Page F",
-        "uv": 2390,
+        "name": "Next.js",
+        "Javascript": 20,
     },
     {
-        "name": "Page G",
-        "uv": 3490,
-    }
+        "name": "Cypress",
+        "Javascript": 30,
+    },
+    {
+        "name": "Storybook",
+        "Javascript": 50,
+    },
+    {
+        "name": "Java",
+        "Java": 20,
+    },
+    {
+        "name": "PHP",
+        "PHP": 20,
+    },
+
 ]
 
 export const Chart = () => {
     return (
-        <BarChart width={730} height={250} data={data} margin={{
+        <BarChart width={700} height={250} data={data} margin={{
             top: 5,
             right: 30,
             left: 20,
@@ -45,8 +58,11 @@ export const Chart = () => {
             <YAxis/>
             <Tooltip/>
             <Legend/>
-            <CartesianGrid strokeDasharray="3 3" />
-            <Bar dataKey="uv" fill="#82ca9d"/>
+            <CartesianGrid strokeDasharray="3 3"/>
+            <Bar dataKey="Javascript" fill="#82ca9d"/>
+            <Bar dataKey="HTML5/CSS3" fill="#E16A4E"/>
+            <Bar dataKey="Java" fill="#86B0BC"/>
+            <Bar dataKey="PHP" fill="#4C598F"/>
         </BarChart>
     );
 }

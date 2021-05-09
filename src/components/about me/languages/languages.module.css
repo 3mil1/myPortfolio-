@@ -2,7 +2,7 @@
     font-family: Playfair Display, serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 72px;
 }
 
@@ -10,7 +10,7 @@
     font-family: Nunito, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.125rem;
     line-height: 150%;
     color: #828282;
 }
@@ -26,4 +26,13 @@
 
 .center img {
    float: right;
+}
+
+
+.chatSvg {
+    position: absolute;
+    width: 31%;
+    bottom: 173px;
+    left: 53px;
+    z-index: -1;
 }

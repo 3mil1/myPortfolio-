@@ -5,7 +5,8 @@ import Container from '@material-ui/core/Container';
 import Box from "@material-ui/core/Box";
 import {Header} from "./components/header/header";
 import {Main} from "./components/main/main";
-
+import {Footer} from "./components/footer/footer";
+import './components/Translate/i18n';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
                     <Box ml={12} mr={12} tyle={{ backgroundColor: '#F9FAFF'}}>
                         <Header/>
                         <Main/>
-                        {/*<Footer/>*/}
+                        <Footer/>
                     </Box>
                 </main>
             </Container>

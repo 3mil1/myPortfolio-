@@ -5,7 +5,7 @@ import {Timeline} from "./timeLine";
 export const Education = () => {
     return (
         <>
-            <h2 className={styles.title}>Education</h2>
+            <h2 className={styles.title}>Work experience & Education</h2>
             <Timeline/>
         </>
     )

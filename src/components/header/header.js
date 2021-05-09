@@ -4,11 +4,9 @@ import {makeStyles} from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {useTranslation} from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
-    toolbar: {
-        borderBottom: `1px solid ${theme.palette.divider}`,
-    },
     toolbarTitle: {
         flex: 1,
     },
@@ -22,8 +20,18 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export const Header = (props) => {
+const lngs = {
+    en: { nativeName: 'ENG' },
+    ru: { nativeName: 'RU' },
+    est: { nativeName: 'ET' }
+};
+
+
+
+export const Header = () => {
     const classes = useStyles();
+    const { i18n } = useTranslation();
+
 
     return (
         <React.Fragment>
@@ -38,9 +46,14 @@ export const Header = (props) => {
                     className={classes.toolbarTitle}
                 >
                 </Typography>
-                <Button variant="outlined" size="small">
-                    Sign up
-                </Button>
+
+                <div style={{zIndex: 1}}>
+                    {Object.keys(lngs).map((lng) => (
+                        <Button size="small" key={lng} style={{ fontWeight: i18n.language === lng ? 'bold' : 'normal',  color: "white" }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                            {lngs[lng].nativeName}
+                        </Button>
+                    ))}
+                </div>
             </Toolbar>
             <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
 
